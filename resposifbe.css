@@ -1,0 +1,76 @@
+/* tablet */
+@media screen and (max-width: 1300px) {
+  .content {
+    margin-left: 20.5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    margin-left: 21%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .content {
+    margin-left: 23%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    margin-left: 26%;
+  }
+
+  .navigasi-kiri {
+    width: 17%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 760px) {
+  body {
+    background-color: #e2e8f0;
+  }
+  /* header */
+  header {
+    margin: 0 0 10px 0;
+    padding: 5px;
+    width: auto;
+    position: relative;
+  }
+
+  /* main */
+  .main {
+    display: block;
+    margin: 0;
+  }
+
+  /* navigasi kiri */
+  .navigasi-kiri {
+    height: 100%;
+    width: auto;
+    position: relative;
+    border-radius: 0;
+  }
+
+  /* content */
+  .content {
+    margin-left: 0;
+    width: auto;
+    margin-top: 10px;
+    border-radius: 0;
+  }
+
+  #profil {
+    border-radius: 0;
+  }
+
+  #krs {
+    border-radius: 0;
+  }
+
+  #smt-1 {
+    padding: 20px;
+  }
+}

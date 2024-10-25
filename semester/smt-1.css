@@ -1,0 +1,95 @@
+#smt-1 {
+  padding: 20px;
+}
+
+.cont-smt {
+  display: flex;
+  gap: 20px;
+}
+
+.materi {
+  height: auto;
+  width: 100%;
+  /* border: 1px solid black; */
+  order: 1;
+}
+
+.materi-content {
+  display: none;
+}
+
+.nav-materi {
+  height: max-content;
+  width: 25%;
+  display: block;
+  padding: 10px;
+  background-color: #e0f2fe;
+  order: 2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav-materi .title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.nav-materi span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.materi-btn {
+  margin: 0;
+  display: block;
+  max-width: max-content;
+  padding: 10px 15px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.materi-btn:hover {
+  background-color: lightgray;
+}
+
+.materi-btn.active {
+  background-color: #38bdf8;
+  color: white;
+}
+
+.materi-btn.active:hover {
+  background-color: darkgray;
+}
+
+@media screen and (max-width: 800px) {
+  .materi-btn {
+    width: 100%; /* Lebar tombol berubah menjadi 100% */
+    max-width: 100%; /* Hapus max-content untuk lebar penuh */
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 760px) {
+  .cont-smt {
+    display: block;
+  }
+  .materi {
+    width: auto;
+  }
+
+  .nav-materi {
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .materi-btn {
+    max-width: max-content; /* Hapus max-content untuk lebar penuh */
+  }
+}

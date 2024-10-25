@@ -1,0 +1,215 @@
+#smt-3 {
+  padding: 20px;
+}
+
+/* pbw */
+#pbw .title h2 {
+  padding: 10px;
+  background-color: #bfdbfe;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+#pbw .title p,
+#basdat .title p,
+#so .title p,
+#kewarganegaraan .title p,
+#rpl .title p,
+#probabilitas .title p,
+#logif .title p {
+  width: max-content;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #e2e8f0;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+#pbw hr,
+#basdat hr,
+#so hr,
+#kewarganegaraan hr,
+#rpl hr,
+#probabilitas hr,
+#logif hr {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+/* peremuan 1 */
+#pbw .pertemuan-1,
+#basdat .pertemuan-1,
+#so .pertemuan-1,
+#kewarganegaraan .pertemuan-1,
+#rpl .pertemuan-1,
+#probabilitas .pertemuan-1,
+#logif .pertemuan-1 {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  transition: background-color 0.7s ease-out;
+  z-index: 0;
+}
+
+.pertemuan-1::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: #bfdbfe;
+  border-radius: 50%;
+  transform: translate(50%, -50%) scale(0);
+  transition: transform 1s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Saat hover, scale animasi dari kursor */
+.pertemuan-1:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+.pertemuan-1 {
+  position: relative;
+  z-index: 1;
+}
+
+#pbw .pertemuan-1:hover,
+#basdat .pertemuan-1:hover,
+#so .pertemuan-1:hover,
+#kewarganegaraan .pertemuan-1:hover,
+#rpl .pertemuan-1:hover,
+#probabilitas .pertemuan-1:hover,
+#logif .pertemuan-1:hover {
+  background-color: #bfdbfe;
+}
+
+#pbw .pertemuan-1 .file-materi a,
+#basdat .pertemuan-1 .file-materi a,
+#so .pertemuan-1 .file-materi a,
+#kewarganegaraan .pertemuan-1 .file-materi a,
+#rpl .pertemuan-1 .file-materi a,
+#probabilitas .pertemuan-1 .file-materi a,
+#logif .pertemuan-1 .file-materi a {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 5px;
+  margin: 15px 0 0 0;
+}
+
+.hover-link {
+  position: relative;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.hover-link::after {
+  content: "Download File"; /* Teks yang akan muncul */
+  position: absolute;
+  bottom: 100%; /* Posisikan di atas elemen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.hover-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* judul basdat */
+#basdat .title h2 {
+  padding: 10px;
+  background-color: #ccfbf1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* judul sistem operasi */
+#so .title h2 {
+  padding: 10px;
+  background-color: #e0e7ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+#kewarganegaraan .title h2 {
+  padding: 10px;
+  background-color: #ffedd5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* judul rpl */
+#rpl h2 {
+  padding: 10px;
+  background-color: #fce7f3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+#probabilitas h2 {
+  padding: 10px;
+  background-color: #fce7f3;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+/* responsifbe */
+@media screen and (max-width: 760px) {
+  #pbw .title p,
+  #basdat .title p,
+  #so .title p,
+  #kewarganegaraan .title p,
+  #rpl .title p,
+  #probabilitas .title p,
+  #logif .title p {
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  #pbw .pertemuan-1 .file-materi a,
+  #basdat .pertemuan-1 .file-materi a,
+  #so .pertemuan-1 .file-materi a,
+  #kewarganegaraan .pertemuan-1 .file-materi a,
+  #rpl .pertemuan-1 .file-materi a,
+  #probabilitas .pertemuan-1 .file-materi a,
+  #logif .pertemuan-1 .file-materi a {
+    font-size: 13px;
+  }
+
+  #pbw .pertemuan-1 .file-materi a img,
+  #basdat .pertemuan-1 .file-materi a img,
+  #so .pertemuan-1 .file-materi a img,
+  #kewarganegaraan .pertemuan-1 .file-materi a img,
+  #rpl .pertemuan-1 .file-materi a img,
+  #probabilitas .pertemuan-1 .file-materi a img,
+  #logif .pertemuan-1 .file-materi a img {
+    height: 25px;
+    width: auto;
+  }
+}

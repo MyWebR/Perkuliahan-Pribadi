@@ -1,0 +1,449 @@
+#profil {
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; /* Menghindari elemen ::before keluar dari batas */
+}
+
+#profil::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  width: 600px;
+  height: 600px;
+  background: #c4b5fd;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(1); /* Tampilkan langsung */
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: 1; /* Tetap menggunakan z-index negatif untuk ::before */
+}
+
+/* Hapus perubahan saat hover */
+#profil:hover {
+  background-color: #e0e7ff; /* Anda bisa mengubah ini jika tidak ingin ada perubahan */
+  transition: ease-in-out 0.7s;
+}
+
+/* Saat hover, scale animasi dari kursor (tetap 1 agar tidak ada perubahan) */
+#profil:hover::before {
+  transform: translate(-50%, -70%) scale(1); /* Tetap dengan scale 1 saat di hover */
+}
+
+/* animasi user hover */
+.user::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 200px;
+  height: 200px;
+  background: #bfdbfe;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1; /* Tetap menggunakan z-index negatif untuk ::before */
+}
+
+.user:hover {
+  background-color: #dbeafe;
+  transition: ease-in-out 0.5s;
+}
+
+/* Saat hover, scale animasi dari kursor */
+.user:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* animasi krs hover */
+.cont-1 .btn-krs-khs button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 200px;
+  height: 200px;
+  background: #fde68a;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.cont-1 .btn-krs-khs button:hover {
+  background-color: #ffedd5;
+  transition: ease-in-out 0.2s;
+}
+
+.cont-1 .btn-krs-khs button:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* animasi user detail */
+.user-detail::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 200px;
+  height: 200px;
+  background: #a7f3d0;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1; /* Tetap menggunakan z-index negatif untuk ::before */
+}
+
+.user-detail:hover {
+  background-color: #d1fae5;
+  transition: ease-in-out 0.2s;
+}
+
+.user-detail:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* animasi grafik */
+.chart-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 150px;
+  height: 40px;
+  background: rgba(255, 165, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1; /* Tetap menggunakan z-index negatif untuk ::before */
+}
+
+.chart-container:hover {
+  transition: ease-in-out 0.2s;
+}
+
+/* Saat hover, scale animasi dari kursor */
+.chart-container:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* animasi rincian kursus */
+.rincian-kursus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 260px;
+  height: 200px;
+  background: #fbcfe8;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1; /* Tetap menggunakan z-index negatif untuk ::before */
+}
+
+.rincian-kursus:hover {
+  background-color: #fce7f3;
+  transition: ease-in-out 0.2s;
+}
+
+/* Saat hover, scale animasi dari kursor */
+.rincian-kursus:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* content1 */
+.cont-1 {
+  display: flex;
+  gap: 20px;
+}
+
+.user {
+  display: flex;
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.user img {
+  border-radius: 10px;
+}
+
+.cont-1 .btn-krs-khs {
+  width: 50%;
+  gap: 20px;
+  display: flex;
+}
+
+.cont-1 .nav-btn {
+  position: relative;
+  text-decoration: none;
+}
+
+.cont-1 .btn-krs-khs button {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.cont-1 .btn-krs-khs button::after {
+  content: "Selengkapnya"; /* Ganti dengan teks yang ingin ditampilkan */
+  position: absolute;
+  top: 5px; /* Posisi teks di atas tombol */
+  left: 23%;
+  transform: translateX(-50%); /* Pusatkan teks */
+  opacity: 0; /* Mulai dengan teks tidak terlihat */
+  transition: opacity 0.3s ease; /* Transisi untuk efek tampilan */
+  white-space: nowrap; /* Agar teks tidak terputus */
+  background: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
+  padding: 5px 10px; /* Jarak sekitar teks */
+  border-radius: 5px; /* Radius sudut untuk latar belakang */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan untuk kedalaman */
+  z-index: 1; /* Di bawah tombol */
+}
+
+.cont-1 .btn-krs-khs button:hover::after {
+  opacity: 1; /* Tampilkan teks saat hover */
+}
+
+.cont-1 button #title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cont-1 button p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* cont-2 */
+.cont-2 {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* info user */
+.info-user {
+  width: 55.5%;
+  order: 1;
+}
+
+/* user detail */
+.user-detail {
+  width: auto;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: 1;
+}
+
+.user-detail #title-user-detail,
+.user-detail #title-email,
+.user-detail #title-country,
+.user-detail #title-city {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user-detail p {
+  font-size: 13px;
+}
+
+.rincian-kursus {
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: 1;
+}
+
+.rincian-kursus #title-rincian-kursus {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rincian-kursus span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rincian-kursus span p {
+  margin: 0;
+  padding: 0;
+}
+
+.rincian-kursus span p {
+  background-color: transparent;
+  padding: 0;
+  font-size: 13px;
+}
+
+.rincian-kursus span p:hover {
+  color: orange;
+  background-color: transparent;
+}
+
+/* Grafik */
+.chart-container {
+  width: 50%;
+  height: 40vh;
+  padding: 50px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  order: 2;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+  display: grid; /* Gunakan Grid untuk tata letak */
+  place-items: center; /* Pusatkan konten secara horizontal dan vertikal */
+  transition: transform 0.2s; /* Transisi saat hover */
+}
+
+chart-container:hover {
+  transform: scale(1.02); /* Efek zoom saat hover */
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+/* tablet */
+@media screen and (max-width: 1300px) {
+  .cont-2 {
+    display: block;
+  }
+
+  .chart-container {
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .info-user {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cont-2 {
+    display: block;
+  }
+
+  .chart-container {
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .info-user {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cont-2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cont-2 {
+    display: block;
+  }
+
+  .chart-container {
+    height: auto;
+  }
+
+  canvas {
+    width: auto;
+    height: 100%;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cont-2 {
+    display: block;
+  }
+
+  .chart-container {
+    height: auto;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 760px) {
+  .cont-1 {
+    display: block;
+  }
+
+  .user {
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .cont-1 .btn-krs-khs {
+    gap: 10px;
+    width: auto;
+  }
+
+  .cont-1 .btn-krs-khs button::after {
+    left: 39%;
+  }
+
+  .cont-2 {
+    display: block;
+  }
+
+  .chart-container {
+    width: auto;
+  }
+
+  .info-user {
+    margin-top: 20px;
+    width: auto;
+  }
+
+  .user-detail {
+    margin-bottom: 20px;
+  }
+}

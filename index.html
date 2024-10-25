@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font poopins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end font poopins -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/kontribusi-github.css" />
+    <link rel="stylesheet" href="profil.css" />
+    <link rel="stylesheet" href="css/krs.css" />
+    <link rel="stylesheet" href="css/krs-animasi.css" />
+    <link rel="stylesheet" href="css/khs.css" />
+    <link rel="stylesheet" href="css/khs-animasi.css" />
+    <link rel="stylesheet" href="resposifbe.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- smt -->
+    <link rel="stylesheet" href="semester/smt-1.css" />
+    <link rel="stylesheet" href="semester/smt-2.css" />
+    <link rel="stylesheet" href="semester/smt-3.css" />
+    <title>Penyimpanan Kuliah</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1>Header</h1>
+    </header>
+    <!-- pembungkus kontent -->
+    <section class="main">
+      <!-- navigasi kiri -->
+      <div class="navigasi-kiri">
+        <h1>Navigasi Kiri</h1>
+        <!-- user -->
+        <button class="nav-btn" id="home-btn">
+          <img src="icon/home.png" alt="Home" />
+          <p>Home</p>
+        </button>
+        <button class="nav-btn" id="profil-btn">
+          <img src="icon/profile.png" alt="Profil" />
+          <p>Profil</p>
+        </button>
+        <button class="nav-btn" id="blog-btn">
+          <img src="icon/pen.png" alt="blog" />
+          <p>Blog</p>
+        </button>
+        <hr />
+        <button class="nav-btn" id="krs-btn">
+          <img src="icon/note.png" alt="Krs" />
+          <p>Krs</p>
+        </button>
+        <button class="nav-btn" id="khs-btn">
+          <img src="icon/done.png" alt="Khs" />
+          <p>Khs</p>
+        </button>
+        <hr />
+        <!-- semester -->
+        <button class="nav-btn" id="smt-1-btn">
+          <img src="icon/blog.png" alt="semester" />
+          <p>Semester 1</p>
+        </button>
+        <button class="nav-btn" id="smt-2-btn">
+          <img src="icon/blog.png" alt="semester" />
+          <p>Semester 2</p>
+        </button>
+        <button class="nav-btn" id="smt-3-btn">
+          <img src="icon/blog.png" alt="semester" />
+          <p>Semester 3</p>
+        </button>
+        <hr />
+      </div>
+
+      <!-- content -->
+      <div class="content">
+        <!-- <h1>Content</h1> -->
+        <!-- home -->
+        <section id="home" class="content-section">
+          <div class="bg-home"></div>
+          <!-- Container untuk grafik kontribusi -->
+          <div class="github-chart-container">
+            <!-- Judul yang menyerupai GitHub -->
+            <div class="chart-title">Contributions in the last year</div>
+            <!-- Gambar grafik kontribusi -->
+            <div class="github-contributions">
+              <img
+                src="https://ghchart.rshah.org/MyWebR"
+                alt="GitHub Contributions Chart"
+              />
+            </div>
+            <!-- Teks kecil di bawah grafik -->
+            <div class="chart-footer">Learn how we count contributions.</div>
+          </div>
+        </section>
+        <!-- profil -->
+        <section id="profil" class="content-section">
+          <!-- cont-1 -->
+          <div class="cont-1">
+            <div class="user">
+              <img src="icon/f1.png" alt="" />
+              <div class="name">
+                <p>Restu Ardiansyah</p>
+                <p>A11.2023.15194</p>
+              </div>
+            </div>
+            <div class="btn-krs-khs">
+              <button class="nav-btn" id="krs-btn">
+                <p id="title">Telah Mengambil</p>
+                <p>41 SKS</p>
+              </button>
+              <button class="nav-btn" id="khs-btn">
+                <p id="title">IP Kumulatif</p>
+                <p>3.27</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- cont-2 -->
+          <div class="cont-2">
+            <!-- grafik -->
+            <div class="chart-container">
+              <p>Grafik IPS</p>
+              <canvas id="ipsChart"></canvas>
+            </div>
+            <!-- info users -->
+            <div class="info-user">
+              <div class="user-detail">
+                <p id="title-user-detail">User Detail</p>
+                <p id="title-email">Alamat Email</p>
+                <p style="margin-left: 10px; color: rgb(0, 106, 255)">
+                  Uknow@gamil.com
+                </p>
+                <br />
+                <p id="title-country">Country</p>
+                <p style="margin-left: 10px">Indonesia</p>
+                <br />
+                <p id="title-city">City/Town</p>
+                <p style="margin-left: 10px">Semarang</p>
+              </div>
+              <!-- rincian kursus -->
+              <div class="rincian-kursus">
+                <p id="title-rincian-kursus">Rincian Kursus</p>
+                <span>
+                  <p>Pemrograman Berbasis web</p>
+                  <p>Basis Data</p>
+                  <p>Sistem Operasi</p>
+                  <p class="nav-btn" id="smt-3-btn">Selengkapnya...</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- krs -->
+        <section id="krs" class="content-section">
+          <!-- item 1 -->
+          <div class="item-1">
+            <!-- kanan -->
+            <div class="krs-marker">
+              <img src="icon/note.png" alt="" />
+              <span>
+                <p id="title">Semester Ganjil</p>
+                <p>T.A. 2024/2025</p>
+              </span>
+            </div>
+            <!-- kiri -->
+            <div class="krs-dan-total-krs">
+              <!-- sks smt 3 -->
+              <div class="one">
+                <img src="icon/blog.png" alt="" />
+                <span>
+                  <p id="title">20 SKS - SMT 3</p>
+                  <p>7 Matakuliah</p>
+                </span>
+              </div>
+              <!-- total sks -->
+              <div class="two">
+                <img src="icon/check-mark.png" alt="" />
+                <span>
+                  <p id="title">Telah Mengambil</p>
+                  <p>41 SKS</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="item-2">
+            <!-- grafik -->
+            <div class="grafik-pengambilan-krs">
+              <p>Grafik Pengambilan KRS</p>
+              <canvas id="gpk"></canvas>
+            </div>
+            <!-- krs -->
+            <div class="pembungkus-krs">
+              <p id="title-pembungkus-krs">Kartu Rencana Studi</p>
+              <!-- krs smt 1 -->
+              <div class="krs-smt-1">
+                <div class="header-krs header-krs-smt-1">
+                  <span>KRS 2023-2024 Ganjil</span>
+                  <span class="arrow-icon arrow-icon-smt-1">&#9660;</span>
+                </div>
+                <div class="item-krs item-krs-smt-1">smt 1</div>
+              </div>
+              <br />
+              <!-- krs smt 2 -->
+              <div class="krs-smt-2">
+                <div class="header-krs header-krs-smt-2">
+                  <span>KRS 2023-2024 Genap</span>
+                  <span class="arrow-icon arrow-icon-smt-2">&#9660;</span>
+                </div>
+                <div class="item-krs item-krs-smt-2">
+                  <!-- PROBABILITAS DAN STATISTIKA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PROBABILITAS DAN STATISTIKA</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64301</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Kamis</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>09.00 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.12</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- LOGIKA INFORMATIKA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>LOGIKA IFORMATIKA</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4312</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Senin</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>09.30 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.11</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- REKAYASA PERANGKAT LUNAK -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>REKAYASA PERANGKAT LUNAK</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64303</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Senin</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>12.30 - 15.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.5.12</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- BASIS DATA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>BASIS DATA</p>
+                      <span>
+                        <p>Teori - Praktek 🔸 4 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4303</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64304</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <span id="pembungkus-jadlok-dua">
+                      <div class="jad-lok">
+                        <p>Rabu</p>
+                        <span>
+                          <span id="jam">
+                            <img src="icon/clock.png" alt="jam" />
+                            <p>10.20 - 12.00</p>
+                          </span>
+                          <span id="lokasi">
+                            <img src="icon/location.png" alt="lokasi" />
+                            <p>D.3.M</p>
+                          </span>
+                        </span>
+                      </div>
+                      <div class="jad-lok">
+                        <p>Jumat</p>
+                        <span>
+                          <span id="jam">
+                            <img src="icon/clock.png" alt="jam" />
+                            <p>10.20 - 12.00</p>
+                          </span>
+                          <span id="lokasi">
+                            <img src="icon/location.png" alt="lokasi" />
+                            <p>H.5.3</p>
+                          </span>
+                        </span>
+                      </div>
+                    </span>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- PEMROGRAMAN BERBASIS WEB -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PEMROGRAMANN BERBASIS WEB</p>
+                      <span>
+                        <p>Teori 🔸 2 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4311</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64305</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Rabu</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>08.40 - 10.20</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>D.2.J</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- SISTEM OPERASI -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>SISTEM OPERASI</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64306</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Kamis</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>12.30 - 15.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.8</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- PENDIDIKAN KEWARGANEGARAAN -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PENIDIDKAN KEWARGANEGARAAN</p>
+                      <span>
+                        <p>Teori 🔸 2 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>N602A</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>M201706</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Selasa</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>10.20 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>AULA.H.7</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <!-- krs smt 3 -->
+              <div class="krs-smt-3">
+                <div class="header-krs header-krs-smt-3">
+                  <span>KRS 2024-2025 Ganjil</span>
+                  <span class="arrow-icon arrow-icon-smt-3">&#9660;</span>
+                </div>
+                <div class="item-krs item-krs-smt-3">
+                  <!-- PROBABILITAS DAN STATISTIKA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PROBABILITAS DAN STATISTIKA</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64301</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Kamis</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>09.00 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.12</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- LOGIKA INFORMATIKA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>LOGIKA IFORMATIKA</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4312</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Senin</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>09.30 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.11</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- REKAYASA PERANGKAT LUNAK -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>REKAYASA PERANGKAT LUNAK</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64303</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Senin</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>12.30 - 15.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.5.12</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- BASIS DATA -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>BASIS DATA</p>
+                      <span>
+                        <p>Teori - Praktek 🔸 4 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4303</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64304</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <span id="pembungkus-jadlok-dua">
+                      <div class="jad-lok">
+                        <p>Rabu</p>
+                        <span>
+                          <span id="jam">
+                            <img src="icon/clock.png" alt="jam" />
+                            <p>10.20 - 12.00</p>
+                          </span>
+                          <span id="lokasi">
+                            <img src="icon/location.png" alt="lokasi" />
+                            <p>D.3.M</p>
+                          </span>
+                        </span>
+                      </div>
+                      <div class="jad-lok">
+                        <p>Jumat</p>
+                        <span>
+                          <span id="jam">
+                            <img src="icon/clock.png" alt="jam" />
+                            <p>10.20 - 12.00</p>
+                          </span>
+                          <span id="lokasi">
+                            <img src="icon/location.png" alt="lokasi" />
+                            <p>H.5.3</p>
+                          </span>
+                        </span>
+                      </div>
+                    </span>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- PEMROGRAMAN BERBASIS WEB -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PEMROGRAMANN BERBASIS WEB</p>
+                      <span>
+                        <p>Teori 🔸 2 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4311</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64305</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Rabu</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>08.40 - 10.20</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>D.2.J</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- SISTEM OPERASI -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>SISTEM OPERASI</p>
+                      <span>
+                        <p>Teori 🔸 3 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>A11.4302</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>A11.64306</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Kamis</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>12.30 - 15.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>H.4.8</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+
+                  <!-- PENDIDIKAN KEWARGANEGARAAN -->
+                  <div class="matkul-smt-3">
+                    <!-- identitas matkul -->
+                    <div class="name-matkul">
+                      <p>PENIDIDKAN KEWARGANEGARAAN</p>
+                      <span>
+                        <p>Teori 🔸 2 SKS</p>
+                      </span>
+                    </div>
+
+                    <!-- kelompok kode-matkul status -->
+                    <div class="kks">
+                      <span id="kel">
+                        <p id="title">Kelompok</p>
+                        <p>N602A</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Kode Mata Kuliah</p>
+                        <p>M201706</p>
+                      </span>
+                      <span id="kel">
+                        <p id="title">Status</p>
+                        <p>Baru</p>
+                      </span>
+                    </div>
+
+                    <!-- jadwal dan lokasi -->
+                    <div class="jad-lok">
+                      <p>Selasa</p>
+                      <span>
+                        <span id="jam">
+                          <img src="icon/clock.png" alt="jam" />
+                          <p>10.20 - 12.00</p>
+                        </span>
+                        <span id="lokasi">
+                          <img src="icon/location.png" alt="lokasi" />
+                          <p>AULA.H.7</p>
+                        </span>
+                      </span>
+                    </div>
+
+                    <!-- presentase kehadiran -->
+                    <div class="pres-hadir">
+                      <p>Presentase Kehadiran</p>
+                      <span><p>100%</p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- khs -->
+        <section id="khs" class="content-section">
+          <div class="buton-menu-khs">
+            <button id="menu-1-khs"><p>khs</p></button>
+            <button id="menu-2-khs">Daftar Nilai</button>
+          </div>
+          <!-- daftar nilai -->
+          <div class="daftar-nilai" style="display: none">
+            <!-- ipk dan jumlah sks -->
+            <span id="cont-1-dn">
+              <button class="nav-btn" id="krs-btn">
+                <p id="title">Telah Mengambil</p>
+                <p>41 SKS</p>
+              </button>
+              <button class="nav-btn" id="khs-btn">
+                <p id="title">IP Kumulatif</p>
+                <p>3.27</p>
+              </button>
+            </span>
+
+            <!-- kategori-nilai -->
+            <span id="kategori-nilai">
+              <div class="a">
+                <p id="kategori">A</p>
+                <p id="jumlah-didapat">4</p>
+              </div>
+              <div class="a">
+                <p id="kategori">B</p>
+                <p id="jumlah-didapat">4</p>
+              </div>
+              <div class="a">
+                <p id="kategori">AB</p>
+                <p id="jumlah-didapat">5</p>
+              </div>
+              <div class="c">
+                <p id="kategori">C</p>
+                <p id="jumlah-didapat">1</p>
+              </div>
+              <div class="c">
+                <p id="kategori">BC</p>
+                <p id="jumlah-didapat">1</p>
+              </div>
+              <div class="d">
+                <p id="kategori">D</p>
+                <p id="jumlah-didapat">0</p>
+              </div>
+              <div class="e">
+                <p id="kategori">E</p>
+                <p id="jumlah-didapat">0</p>
+              </div>
+            </span>
+
+            <!-- daftar nilai matakuliah -->
+            <div class="daftar-nilai-mataKuliah">
+              <p>Daftar Nilai Mata Kuliah</p>
+              <div class="pembungkus-dn-mk">
+                <!-- KALKULUS -->
+                <div class="c-bc-matkul">
+                  <div class="info-mk">
+                    <p id="mk">KALKULUS</p>
+                    <p>Kode Mata Kuliah: A11.64101 🔸 3 SKS</p>
+                  </div>
+                  <div class="n-mk">C</div>
+                </div>
+                <!-- DASPRO -->
+                <div class="c-bc-matkul">
+                  <div class="info-mk">
+                    <p id="mk">DASAR PEMROGRAMAN</p>
+                    <p>Kode Mata Kuliah: A11.64103 🔸 4 SKS</p>
+                  </div>
+                  <div class="n-mk">BC</div>
+                </div>
+                <!-- FISIKA -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">FISIKA</p>
+                    <p>Kode Mata Kuliah: A11.64102 🔸 4 SKS</p>
+                  </div>
+                  <div class="n-mk">B</div>
+                </div>
+                <!-- IMK -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">INTERAKSI MANUSIA DAN KOMPUTER</p>
+                    <p>Kode Mata Kuliah: A11.64205 🔸 3 SKS</p>
+                  </div>
+                  <div class="n-mk">B</div>
+                </div>
+                <!-- MATRIKS DAN RUANG VEKTOR -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">MATRIKS DAN RUANG VEKTOR</p>
+                    <p>Kode Mata Kuliah: A11.64201 🔸 3 SKS</p>
+                  </div>
+                  <div class="n-mk">B</div>
+                </div>
+                <!-- PENDIDIKAN PANCASILA -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">PENDIDIKAN PANCASILA</p>
+                    <p>Kode Mata Kuliah: N201707 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">B</div>
+                </div>
+                <!-- ALGORITMA DAN STRUKTUR DATA -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">ALGORITMA DAN STRUKTUR DATA</p>
+                    <p>Kode Mata Kuliah: A11.64204 🔸 4 SKS</p>
+                  </div>
+                  <div class="n-mk">AB</div>
+                </div>
+                <!-- PENGANTAR TEKNOLOGI INFORMASI -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">PENGANTAR TEKNOLOGI INFORMASI</p>
+                    <p>Kode Mata Kuliah: U201704 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">AB</div>
+                </div>
+                <!-- DASAR DASAR KOMPUTASI -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">DASAR DASAR KOMPUTASI</p>
+                    <p>Kode Mata Kuliah: AF201704 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">AB</div>
+                </div>
+                <!-- KETERAMPILAN INTERPERSONAL -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">KETERAMPILAN INTERPERSONAL</p>
+                    <p>Kode Mata Kuliah: A11.64104 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">AB</div>
+                </div>
+                <!-- PENDIDIKAN AGAMA ISLAM -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">PENDIDIKAN AGAMA ISLAM</p>
+                    <p>Kode Mata Kuliah: N2017051 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">AB</div>
+                </div>
+                <!-- MATEMATIKA DISKRIT -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">MATEMATIKA DISKRIT</p>
+                    <p>Kode Mata Kuliah: A11.64203 🔸 3 SKS</p>
+                  </div>
+                  <div class="n-mk">A</div>
+                </div>
+                <!-- ORARKOM -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">ORGANISASI DAN ARSITEKTUR KOMPUTER</p>
+                    <p>Kode Mata Kuliah: A11.64202 🔸 3 SKS</p>
+                  </div>
+                  <div class="n-mk">A</div>
+                </div>
+                <!-- DASWIR -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">DASAR KEWIRAUSAHAAN</p>
+                    <p>Kode Mata Kuliah: U201701 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">A</div>
+                </div>
+                <!-- B INDONESIA -->
+                <div class="a-ab-b-matkul">
+                  <div class="info-mk">
+                    <p id="mk">BAHASA INDONESIA</p>
+                    <p>Kode Mata Kuliah: N201701 🔸 2 SKS</p>
+                  </div>
+                  <div class="n-mk">A</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cont-khs -->
+          <div class="pembungkus-cont-khs">
+            <!--  grafik -->
+            <div class="cont-1-khs">
+              <div class="chart-container-khs">
+                <p>Grafik IPS Mahasiswa</p>
+                <canvas id="ips-in-khs"></canvas>
+              </div>
+            </div>
+            <!-- khs mst1 - smt3 -->
+            <div class="cont-2-khs">
+              <div class="khs-smt-3">
+                <div class="header-khs-smt-3">
+                  <span>KHS 2024-2025 Ganjil</span>
+                  <span class="arrow-icon-khs-smt-3">&#9660;</span>
+                </div>
+                <div class="item-khs-smt-3">
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+
+                  <!-- probabilitas dan statistik -->
+                  <div class="cont-item-khs">
+                    <span id="name-mk">
+                      <p>PROBABILITAS DAN STATISTIK</p>
+                      <span id="info-mk">
+                        <p>A11.64301 🔸 3 SKS</p>
+                      </span>
+                    </span>
+                    <span id="dosen-mk">
+                      <p>Dosen Pengampu:</p>
+                      <p id="dosen">Restu</p>
+                    </span>
+                    <div class="status-n">
+                      <span id="n-t">
+                        <p id="status-n">Tugas</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uts">
+                        <p id="status-n">UTS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-uas">
+                        <p id="status-n">UAS</p>
+                        <p id="nilai">100</p>
+                      </span>
+                      <span id="n-akhir">
+                        <p id="status-n">N.Akhir</p>
+                        <p id="nilai">100</p>
+                      </span>
+                    </div>
+                    <div class="title-persen">
+                      <p>Persentase Nilai</p>
+                      <p>100%</p>
+                    </div>
+                    <div class="presentase-nilai">
+                      <div id="persen-tugas"></div>
+                      <div id="persen-uts"></div>
+                      <div id="persen-uas"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="khs-smt-2">
+                <div class="header-khs-smt-2">
+                  <span>KHS 2023-2024 Genap</span>
+                  <span class="arrow-icon-khs-smt-2">&#9660;</span>
+                </div>
+                <div class="item-khs-smt-2">Konten Semester 2</div>
+              </div>
+
+              <div class="khs-smt-1">
+                <div class="header-khs-smt-1">
+                  <span>KHS 2023-2024 Ganjil</span>
+                  <span class="arrow-icon-khs-smt-1">&#9660;</span>
+                </div>
+                <div class="item-khs-smt-1">Konten Semester 1</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- blog -->
+        <section id="blog" class="content-section">Blog</section>
+
+        <!-- smt-1 -->
+        <section id="smt-1" class="content-section">
+          <!-- title -->
+          <div class="title">
+            <p>Semester 1</p>
+          </div>
+          <!-- nav-materi -->
+          <div class="cont-smt">
+            <div class="nav-materi">
+              <div class="title">
+                <p>Pilih Mata Kuliah</p>
+              </div>
+              <span>
+                <a href="#" class="materi-btn" id="ipa-link"><p>IPA</p></a>
+                <a href="#" class="materi-btn" id="pai-link"><p>PAI</p></a>
+                <a href="#" class="materi-btn" id="pjok-link"><p>PJOK</p></a>
+                <a href="#" class="materi-btn" id="ppkn-link"><p>PPKN</p></a>
+                <a href="#" class="materi-btn" id="ips-link"><p>IPS</p></a>
+                <a href="#" class="materi-btn" id="mtk-link"><p>MTK</p></a>
+                <a href="#" class="materi-btn" id="kimia-link"><p>Kimia</p></a>
+              </span>
+            </div>
+            <!-- materi -->
+            <div class="materi">
+              <div id="ipa" class="materi-content">IPA content</div>
+              <div id="pai" class="materi-content" style="display: none">
+                PAI content
+              </div>
+              <div id="pjok" class="materi-content" style="display: none">
+                PJOK content
+              </div>
+              <div id="ppkn" class="materi-content" style="display: none">
+                PPKN content
+              </div>
+              <div id="ips" class="materi-content" style="display: none">
+                IPS content
+              </div>
+              <div id="mtk" class="materi-content" style="display: none">
+                MTK content
+              </div>
+              <div id="kimia" class="materi-content" style="display: none">
+                Kimia content
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- smt-2 -->
+        <section id="smt-2" class="content-section">
+          <div class="cont-smt" id="smt2">
+            <div class="nav-materi">
+              <div class="title">
+                <p>Pilih Mata Kuliah</p>
+              </div>
+              <span>
+                <a href="#" class="materi-btn" id="fisika-link"
+                  ><p>Fisika</p></a
+                >
+                <a href="#" class="materi-btn" id="biologi-link"
+                  ><p>Biologi</p></a
+                >
+                <a href="#" class="materi-btn" id="matematika-link"
+                  ><p>Matematika</p></a
+                >
+                <a href="#" class="materi-btn" id="kimia2-link"><p>Kimia</p></a>
+                <a href="#" class="materi-btn" id="ekonomi-link"
+                  ><p>Ekonomi</p></a
+                >
+                <a href="#" class="materi-btn" id="sejarah-link"
+                  ><p>Sejarah</p></a
+                >
+                <a href="#" class="materi-btn" id="seni-link"><p>Seni</p></a>
+              </span>
+            </div>
+            <div class="materi">
+              <div id="fisika" class="materi-content">Fisika content</div>
+              <div id="biologi" class="materi-content">Biologi content</div>
+              <div id="matematika" class="materi-content">
+                Matematika content
+              </div>
+              <div id="kimia2" class="materi-content">Kimia content</div>
+              <div id="ekonomi" class="materi-content">Ekonomi content</div>
+              <div id="sejarah" class="materi-content">Sejarah content</div>
+              <div id="seni" class="materi-content">Seni content</div>
+            </div>
+          </div>
+        </section>
+        <!-- smt-3 -->
+        <section id="smt-3" class="content-section">
+          <div class="cont-smt" id="smt3">
+            <!-- navigasi materi -->
+            <div class="nav-materi">
+              <div class="title">
+                <p>Pilih Mata Kuliah</p>
+              </div>
+              <span>
+                <a href="#" class="materi-btn" id="pbw-link"
+                  ><p>Pemrograman Perbasis Web</p></a
+                >
+                <a href="#" class="materi-btn" id="basdat-link"
+                  ><p>Basis Data</p></a
+                >
+                <a href="#" class="materi-btn" id="so-link"
+                  ><p>Sistem Operasi</p></a
+                >
+                <a href="#" class="materi-btn" id="kewarganegaraan-link"
+                  ><p>Pendidikan Kewaraganegaraan</p></a
+                >
+                <a href="#" class="materi-btn" id="rpl-link"
+                  ><p>Rekayasa Perangkat Lunak</p></a
+                >
+                <a href="#" class="materi-btn" id="probabilitas-link"
+                  ><p>Probabilitas dan Statistika</p></a
+                >
+                <a href="#" class="materi-btn" id="logif-link"
+                  ><p>Logika Informatika</p></a
+                >
+              </span>
+            </div>
+            <!-- materi -->
+            <div class="materi">
+              <div id="pbw" class="materi-content">
+                <div class="title">
+                  <h2>Pemrograman Berbasis Web</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <!-- 1 -->
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="materi/smt-3/pbw/1 - Pengenalan Pemrograman Berbasis Web.pptx"
+                      download="Pengenalan Pemrograman Berbasis Web"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Pemrograman Berbasis Web</p>
+                    </a>
+                  </div>
+                </div>
+                <!-- 2 -->
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 2</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="materi/smt-3/pbw/2 - HTML Dasar.pptx"
+                      download="HTML Dasar"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>HTML Dasar</p></a
+                    >
+                  </div>
+                </div>
+                <!-- 3 -->
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 3</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="materi/smt-3/pbw/3 - HTML Lanjutan.pptx"
+                      download="HTMl Lanjutan"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>HTMl Lanjutan</p>
+                    </a>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 4</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="materi/smt-3/pbw/4 - CSS Dasar.pptx"
+                      download="CSS Dasar"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>CSS Dasar</p>
+                    </a>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 5</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="materi/smt-3/pbw/5 - CSS Lanjutan.pptx"
+                      download="CSS Lanjutan"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>CSS Lanjutan</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="basdat" class="materi-content">
+                <div class="title">
+                  <h2>Basis Data</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Basis Data</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="so" class="materi-content">
+                <div class="title">
+                  <h2>Sistem Operasi</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Sistem Operasi</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="kewarganegaraan" class="materi-content">
+                <div class="title">
+                  <h2>Pendidikan Kewaraganegaraan</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Pendidikan kewarganegaraan</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="rpl" class="materi-content">
+                <div class="title">
+                  <h2>Rekayasa Perangkat Lunak</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Rekayasa Perangkat Lunak</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="probabilitas" class="materi-content">
+                <div class="title">
+                  <h2>Probabilitas dan Statistika</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Probabilitas dan Statistika dasar</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="logif" class="materi-content">
+                <div class="title">
+                  <h2>Logika Informatika</h2>
+                  <p>Semester Ganjil 2024/2025</p>
+                </div>
+                <hr />
+                <div class="pertemuan-1">
+                  <div class="title">
+                    <p>Pertemuan 1</p>
+                  </div>
+                  <div class="file-materi">
+                    <a
+                      href="path/to/Materi_Pertemuan_1.pdf"
+                      download="Materi Pertemuan 1"
+                      class="hover-link"
+                    >
+                      <img src="icon/powerpoint.webm" alt="" />
+                      <p>Pengenalan Logika Informatika</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- js -->
+    <span>
+      <script src="script.js"></script>
+      <!-- smt -->
+      <script src="js/home.js"></script>
+      <script src="js/kontribusi-github.js"></script>
+      <script src="js/krs.js"></script>
+      <script src="js/khs.js"></script>
+      <script src="semester/smt-1.js"></script>
+      <script src="semester/smt-2.js"></script>
+      <script src="semester/smt-3.js"></script>
+      <!-- grafik -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="grafik.js"></script>
+    </span>
+  </body>
+</html>

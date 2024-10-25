@@ -1,0 +1,75 @@
+/* item 1 */
+/* krs marker */
+.krs-marker::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background: #c4b5fd;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.krs-marker:hover {
+  background-color: #e0e7ff;
+  transition: ease-in-out 0.7s;
+}
+
+.krs-marker:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+
+/* one */
+.krs-dan-total-krs::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  background: #c4b5fd;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.krs-dan-total-krs:hover {
+  background-color: #bfdbfe;
+  transition: ease-in-out 0.7s;
+}
+
+.krs-dan-total-krs::before:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+/* two */
+.two::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 110px;
+  height: 100px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  transform: translate(-50%, -70%) scale(0);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.two:hover {
+  background-color: #818cf8;
+  transition: ease-in-out 0.7s;
+}
+
+.two:hover::before {
+  transform: translate(-50%, -50%) scale(4);
+}
+

@@ -1,0 +1,466 @@
+.buton-menu-khs {
+  display: flex;
+  padding: 20px 20px 0 20px;
+  margin: 0 0 20px 0 ;
+  gap: 20px;
+}
+
+.buton-menu-khs #menu-1-khs,
+.buton-menu-khs #menu-2-khs {
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.buton-menu-khs button.active {
+  background-color: #e0e7ff;
+  color: black;
+}
+
+/* content khs */
+.pembungkus-cont-khs {
+  width: auto;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+/* cont-1 */
+.cont-1-khs {
+  order: 1;
+  width: 100%;
+}
+
+/* Grafik */
+#khs .chart-container-khs {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: grid;
+  place-items: center;
+}
+
+#khs .chart-container h2 {
+  text-align: center;
+}
+
+#khs canvas {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+/* cont-2 */
+.cont-2-khs {
+  width: 100%;
+}
+
+.khs-smt-1,
+.khs-smt-2,
+.khs-smt-3 {
+  margin-bottom: 20px;
+}
+
+.header-khs-smt-1,
+.header-khs-smt-2,
+.header-khs-smt-3 {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header-khs-smt-1 span,
+.header-khs-smt-2 span,
+.header-khs-smt-3 span {
+  font-size: 13px;
+}
+
+.item-khs-smt-1,
+.item-khs-smt-2,
+.item-khs-smt-3 {
+  border-radius: 0 0 10px 10px;
+  height: auto;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #f8fafc;
+  transition: max-height 1s ease, opacity 1s ease;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  max-height: max-content;
+  opacity: 1;
+}
+
+.arrow-icon-khs {
+  transition: transform 1s ease;
+}
+
+/* item khs */
+.cont-item-khs {
+  height: auto;
+  margin: 20px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#name-mk p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#name-mk #info-mk p {
+  width: max-content;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: #fdba74;
+}
+
+#dosen-mk {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+#dosen-mk p {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.status-n {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.status-n #status-n {
+  font-size: 12px;
+}
+
+.status-n #nilai {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.status-n #n-akhir {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #4ade80;
+}
+
+.title-persen {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-persen p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.presentase-nilai {
+  height: 10px;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.presentase-nilai #persen-tugas {
+  height: 10px;
+  width: 40%;
+  border-radius: 5px 0 0 5px;
+  background-color: #15803d;
+}
+
+.presentase-nilai #persen-uts {
+  height: 10px;
+  width: 60%;
+  background-color: #16a34a;
+}
+
+.presentase-nilai #persen-uas {
+  height: 10px;
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+  background-color: #4ade80;
+}
+
+/* content daftar nilai */
+/* ipk dan sks */
+#cont-1-dn {
+  padding: 0 20px;
+  display: flex;
+  gap: 20px;
+}
+#cont-1-dn .nav-btn #title {
+  font-size: 10px;
+  opacity: 50%;
+}
+
+#cont-1-dn .nav-btn p {
+  font-size: 18px;
+}
+
+#cont-1-dn button {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* kategori nilai */
+#kategori-nilai {
+  border-radius: 10px;
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#kategori-nilai .a {
+  padding: 5px 10px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#kategori-nilai .a #jumlah-didapat {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: #4ade80;
+}
+
+#kategori-nilai .c {
+  padding: 5px 10px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#kategori-nilai .c #jumlah-didapat {
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fdba74;
+}
+
+#kategori-nilai .d {
+  padding: 5px 10px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#kategori-nilai .d #jumlah-didapat {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #f97316;
+}
+
+#kategori-nilai .e {
+  padding: 5px 10px;
+  height: 50px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#kategori-nilai .e #jumlah-didapat {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+  background-color: red;
+}
+
+/* daftar nilai matakuliah */
+.daftar-nilai-mataKuliah {
+  width: auto;
+  padding: 20px;
+}
+
+.daftar-nilai-mataKuliah p {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 80%;
+}
+
+.pembungkus-dn-mk {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* CSS UNTUK NILAI C DAN BC */
+.c-bc-matkul {
+  height: auto;
+  width: 46.5%;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.info-mk #mk {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 100%;
+}
+
+.info-mk p {
+  margin: 0;
+  font-size: 10px;
+  opacity: 60%;
+}
+
+.n-mk {
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #fdba74;
+}
+
+/* CSS UNTUK A, AB, DAN B */
+.a-ab-b-matkul {
+  height: auto;
+  width: 46.5%;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.a-ab-b-matkul .n-mk {
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #4ade80;
+}
+
+/* tablet */
+
+@media screen and (max-width: 1300px) {
+  /* daftar nilai matkul */
+  .c-bc-matkul,
+  .a-ab-b-matkul {
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 760px) {
+  #khs .pembungkus-cont-khs {
+    margin-top: 10px;
+    display: block;
+  }
+
+  /* cont-1 */
+  .cont-1-khs {
+    margin-bottom: 20px;
+    order: 1;
+    width: 100%;
+  }
+
+  #kategori-nilai .a {
+    width: 39%;
+  }
+  #kategori-nilai .c {
+    width: 39%;
+  }
+  #kategori-nilai .d {
+    width: 39%;
+  }
+  #kategori-nilai .e {
+    width: 88%;
+  }
+
+  /* daftar nilai matkul */
+  .c-bc-matkul,
+  .a-ab-b-matkul {
+    width: 100%;
+  }
+}
