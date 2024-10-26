@@ -1,7 +1,7 @@
 .buton-menu-khs {
   display: flex;
   padding: 20px 20px 0 20px;
-  margin: 0 0 20px 0 ;
+  margin: 0 0 20px 0;
   gap: 20px;
 }
 
@@ -445,6 +445,33 @@
     width: 100%;
   }
 
+  #name-mk p {
+    font-size: 14px;
+  }
+
+  #name-mk #info-mk p {
+    font-size: 12px;
+  }
+
+  .status-n #status-n {
+    font-size: 10px;
+    opacity: 80%;
+  }
+
+  #dosen-mk p {
+    font-size: 13px;
+  }
+
+  .status-n #nilai {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .title-persen p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
   #kategori-nilai .a {
     width: 39%;
   }
@@ -459,6 +486,24 @@
   }
 
   /* daftar nilai matkul */
+
+  .info-mk #mk {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 100%;
+  }
+
+  .info-mk p {
+    margin: 0;
+    font-size: 8px;
+    opacity: 60%;
+  }
+
+  .n-mk {
+    font-size: 14px;
+  }
+
   .c-bc-matkul,
   .a-ab-b-matkul {
     width: 100%;

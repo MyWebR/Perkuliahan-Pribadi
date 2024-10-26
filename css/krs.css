@@ -319,6 +319,18 @@ canvas {
     width: auto;
   }
 
+  .item-1 img {
+    height: 25px;
+  }
+
+  .item-1 span #title {
+    font-size: 14;
+  }
+
+  .item-1 span p {
+    font-size: 12px;
+  }
+
   .krs-dan-total-krs {
     margin-top: 20px;
   }
