@@ -8,9 +8,8 @@
   background-color: #ffffff;
   border: 1px solid #e1e4e8;
   border-radius: 6px;
-  max-width: 900px;
+  max-width: auto;
   margin: 20px auto;
-  display: none;
 }
 
 /* Menambahkan judul seperti GitHub */
@@ -21,18 +20,16 @@
   color: #24292e;
   margin-bottom: 10px;
   text-align: left;
+  height: 100%;
   width: 100%;
   padding-left: 10px;
-  display: none;
 }
 
 /* Mengatur ukuran gambar grafik agar lebih mirip GitHub */
 .github-contributions img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
+  height: 20vh;
+  width: auto;
   border-radius: 6px;
-  display: none;
 }
 
 /* Mengatur teks kecil di bawah grafik */
@@ -45,5 +42,4 @@
   text-align: left;
   width: 100%;
   padding-left: 10px;
-  display: none;
 }
