@@ -18,8 +18,3 @@ git add .
 git commit -m "add file note"
 git push origin main
 
-
-git add .
-git commit -m "add file note"
-git push origin main
-
