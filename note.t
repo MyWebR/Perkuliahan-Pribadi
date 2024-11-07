@@ -3,6 +3,3 @@ hello
 
 hello
 
-
-hello
-
