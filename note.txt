@@ -1,4 +1,4 @@
 
 git add .
-git commit -m "insert file toren"
+git commit -m "add file note"
 git push origin main
